@@ -12,23 +12,28 @@
     </header>
     <main class="body__main">
         <section>
-            <textarea class="tex__area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea class="tex__area" id="textarea_a" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div> 
-                <h6 class="informacion"> <img src="./assets/bi_exclamation-circle-fill.png"> Solo letras minúsculas y sin acentos</h6>
+                <h6 class="informacion"> <img src="./assets/bi_exclamation-circle-fill.png" alt="signo de exclamacion"> Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
-                <button class="btn__encriptar">Encriptar</button>
-                <button class="btn__desencriptar">Desencriptar</button>
+                <button class="btn__encriptar" onclick="btnEncriptar();">Encriptar</button>
+                <button class="btn__desencriptar" onclick="btnDesencriptar();" >Desencriptar</button>
             </div>
         </section>
         <section>  
-            <textarea class="mensaje__encriptado" cols="20" rows="10"></textarea> 
+            <textarea class="mensaje__encriptado" id="textarea_b" cols="20" rows="10"></textarea> 
             <div>
-                <button class="btn__copiar">Copiar</button>
+                <button class="btn__copiar" onclick="copyText();">Copiar</button>
             </div>
-
         </section>
     </main>
-    
+    <footer class="footer">
+        <div class="footer_contactos">
+            <a class="contactos" href="https://github.com/anibalmisel">GITHUB: https://github.com/anibalmisel</a>
+            <p class="Developed">Developed by Anibal Misel <strong>2024</strong></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

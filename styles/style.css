@@ -1,88 +1,290 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
-    background-color: #f3f5fc;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    overflow-y: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --color-primario: #0A3871;
+    --color-secundario: #f3f5fc;
+    --fuente-recurrente: 'Inter';
+    --peso-fuente: 400;
 }
+*{
+   padding: 0;
+   margin: 0;
+}
+body{
+    box-sizing: border-box;
+    background-image: url("/assets/codigo-binario.jpg");
+}
+
+/*...Estilos del header...*/
+
 .logo{
     margin-top: 40px;
     margin-left: 50px;
     width: 120px;
 }
-body{
-    background-color: #f3f5fc;
-    box-sizing: border-box;
-    height: 100vh;
-}
+
+/*...Estilos del main...*/
+
 .body__main{
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 200px;
+    margin-left: 15%;
+    gap: 50px;
 }
+
+/*...Section 1...*/
+
 .tex__area{
+    margin-top: 60px;
+    margin-right: 30px;
+    padding: 10px;;
     border: none;
-    color: #0A3871;
-    margin-top: 90px;
+    color: #06D001;
+    background-color: black;
     text-transform: lowercase;
+    font-family: "Abel", sans-serif;
+    font-weight: var(--peso-fuente);
+    font-size: 2rem;
+    width: 100%;
+    height: 340px;
 }
-::placeholder{ color: #0A3871;}
+::placeholder{ color: #06D001;}
 .tex__area:focus{
     outline: none;
 }
+.informacion{
+    color: #06D001;
+    background-color: black;
+    font-size: o.75rem;
+    font-family: var(--fuente-recurrente);
+    font-weight: var(--peso-fuente);
+    height: 30px;
+    padding: auto;
+    padding-left: 10px;
+    width: 220px;
+    border-radius: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+.btn__encriptar{
+    background-color: black;
+    border: 1px solid var(--color-primario);
+    border-radius: 15px;
+    color: #06D001;
+    cursor:pointer;
+    height: 50px;
+    width: 60%;
+    font-family: var(--fuente-recurrente);
+    font-weight: var(--peso-fuente);
+    font-size: 1rem;
+}
+.btn__encriptar:hover{
+    background-color: var(--color-primario);
+}
+.btn__desencriptar{
+    background: #06D001;
+    border: 1px solid var(--color-primario);
+    border-radius: 15px;
+    color: black;
+    cursor:pointer;
+    height: 50px;
+    margin-left: 30px;
+    width: 60%;
+    font-family: var(--fuente-recurrente);
+    font-weight: var(--peso-fuente);
+    font-size: 1rem;
+}
+.btn__desencriptar:hover{
+    background-color: var(--color-primario);
+    color: white;
+}
+
+/*...Section 2...*/
+
 .mensaje__encriptado{
-    background: white;
+    background: black;
     background-image: url("/assets/Muneco.png");
     background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-position: 45% 40%;
     border: none;
     border-radius: 24px;
-    color: #0A3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
+    padding: 10px;
     position: fixed;
+    font-family: "Abel", sans-serif;
+    font-weight: var(--peso-fuente);
+    font-size: 1.5rem;
+    color: #06D001;
+    height: 530px;
+    width: 25%;
 }
 .mensaje__encriptado:focus{
     outline: none;
 }
-.informacion{
-    color: #495057;
-    font-size: 18px;
-}
-.botones{
-    display: flex;
-   margin-top: 18px;
-
-}
-.btn__encriptar{
-    background-color: #0A3871;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
+.btn__copiar{
+    border: 1px solid #06D001;
+    border-radius: 15px;
+    background-color:black;
     color: white;
     cursor:pointer;
-    height: 67px;
-    width: 328px;
-}
-.btn__desencriptar{
-    background: #d8dfe8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: #0A3871;
-    cursor:pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;
-}
-.btn__copiar{
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: #0A3871;
-    cursor:pointer;
-    height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 455px;
     position: absolute;
-    width: 336px;
+    width: 16%;
+    font-family: var(--fuente-recurrente);
+    font-weight: var(--peso-fuente);
+    font-size: 1rem;
+}
+.btn__copiar:hover{
+    background-color: var(--color-primario);
+}
+
+/*...Pie de pagina*/
+
+.footer{
+   margin-top: 103px;
+   background-color: black;
+   height: 49px;
+   padding-top: 10px;
+}
+.footer_contactos{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+.contactos{
+    padding: 5px;
+    color: #06D001;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: var(--fuente-recurrente);
+    font-weight: var(--peso-fuente);
+    margin-left: 100px;
+}
+.Developed{
+    color: #06D001;
+    font-size: 0.9rem;
+    font-family: var(--fuente-recurrente);
+    font-weight: var(--peso-fuente);
+    margin-left: auto;
+    margin-right: auto;
+}
+/*...Responsive Tabla...*/
+
+@media(max-width: 1150px ) {
+    .logo{
+        margin-left: 5px;
+    }
+    .body__main{
+        flex-direction: column;
+        margin: 4%;
+    }
+
+    /*...Section 1...*/
+
+    .tex__area{
+        margin-top: 30px;
+    }
+    ::placeholder{
+        font-size: auto;
+    }
+    .informacion{
+        margin-left: 20px;
+    }
+    .botones{
+        margin-left: 30px;
+    }
+    .btn__encriptar{
+        width: 50%;
+    }
+    .btn__desencriptar{
+        width: 50%;
+    }
+
+    /*...Section 2...*/
+
+    .mensaje__encriptado{
+        width: 90%;
+        height: 250px;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+    }
+    .btn__copiar{
+        width: 70%;
+        margin-top: 180px;
+        margin-left: 70px;
+    }
+
+    /*...Pie de pagina...*/
+
+    .footer{
+        margin-top: 330px;
+    }
+}
+
+/*...Responsive Celular...*/
+
+@media(max-width: 376px){
+   
+    /*...Section 1...*/
+
+    .tex__area {
+        font-size: 1.2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .botones{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btn__encriptar{
+        width: 95%;
+        margin: 0px;
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        border-radius: 10px;
+    }
+    .btn__desencriptar{
+        width: 95%;
+        margin: 0px;
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        border-radius: 10px;
+    }
+
+    /*...Section 2...*/
+
+    .mensaje__encriptado{
+        width: 90%;
+        height: 250px;
+        background-image: none;
+        font-size: 1.2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn__copiar{
+        margin-top: 170px;
+        margin-left: 20px;
+        width: 80%;
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        border-radius: 10px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    /*...Pie de pagina...*/
+
+    .footer{
+        margin-top: 250px;
+    }
 }
