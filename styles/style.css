@@ -45,7 +45,7 @@ body{
     font-weight: var(--peso-fuente);
     font-size: 2rem;
     width: 100%;
-    height: 340px;
+    height: 335px;
 }
 ::placeholder{ color: #06D001;}
 .tex__area:focus{
@@ -68,11 +68,11 @@ body{
 }
 .botones{
     display: flex;
-    margin-top: 18px;
+    margin-top: 03px;
 }
 .btn__encriptar{
     background-color: black;
-    border: 1px solid var(--color-primario);
+    border:none;
     border-radius: 15px;
     color: #06D001;
     cursor:pointer;
@@ -114,12 +114,12 @@ body{
     border: none;
     border-radius: 24px;
     padding: 10px;
-    position: fixed;
+    position: absolute;
     font-family: "Abel", sans-serif;
     font-weight: var(--peso-fuente);
     font-size: 1.5rem;
     color: #06D001;
-    height: 530px;
+    height: 480px;
     width: 25%;
 }
 .mensaje__encriptado:focus{
@@ -133,7 +133,7 @@ body{
     cursor:pointer;
     height: 50px;
     margin-left: 60px;
-    margin-top: 455px;
+    margin-top: 440px;
     position: absolute;
     width: 16%;
     font-family: var(--fuente-recurrente);
@@ -147,24 +147,14 @@ body{
 /*...Pie de pagina*/
 
 .footer{
-   margin-top: 103px;
+   margin-top: 06px;
+   padding: 3px;
    background-color: black;
-   height: 49px;
-   padding-top: 10px;
+   height: 25px;
 }
 .footer_contactos{
     display: flex;
-    align-items: baseline;
-    flex-direction: column;
-}
-.contactos{
-    padding: 5px;
-    color: #06D001;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-family: var(--fuente-recurrente);
-    font-weight: var(--peso-fuente);
-    margin-left: 100px;
+    align-items: center;
 }
 .Developed{
     color: #06D001;
