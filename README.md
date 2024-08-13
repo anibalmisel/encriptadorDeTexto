@@ -1,5 +1,7 @@
 <h1 align="center">ENCRIPTADOR DE TEXTO</h1>
-![Encriptador de texto ](https://imgur.com/a/DYet18h)
+
+![Encriptador de texto ](https://github.com/user-attachments/assets/e070a57f-ca3d-4dfc-9567-b2ea54ec039f)
+
 <h2 align="center">DESCRIPCION DEL PROYECTO</h2>
 <p>El encriptador de texto es un proyecto propuesto por Alura Latam. Consiste en una página responsiva donde puedes escribir un texto plano, es decir, escrito siempre en minúscula, sin acentos, sin carácteres especiales y al clicar la opción de encriptar, al texto se le aplicaran ciertas llaves para transformarlo en un texto encriptado. Existe la opción de desencriptar el texto encriptado.</p>
 <h2>Estado del proyecto</h2>
